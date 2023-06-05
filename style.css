@@ -1,0 +1,32 @@
+.header {
+    color: #ff2828;
+    font-weight: bold;
+    width: 100%;
+    line-height: 50px;
+    text-indent: 20px;
+    background-color: #4e0606;
+}
+
+.date {
+    color: rgb(255, 255, 255);
+    text-indent: 40px;
+}
+
+.footer-link{
+    display: block;
+}
+
+body {
+    background-color: #000000;
+    margin: 0;
+    color: rgb(255, 255, 255);
+}
+
+li {
+    list-style-type: "\1f9cc";
+}
+
+th {
+    background-color: #ffff00;
+    color: #b10600;
+}

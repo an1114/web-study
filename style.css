@@ -5,6 +5,7 @@
     line-height: 50px;
     text-indent: 20px;
     background-color: #4e0606;
+    text-align: center;
 }
 
 .date {
@@ -30,3 +31,7 @@ th {
     background-color: #ffff00;
     color: #b10600;
 }
+#yamada{
+    color:rgb(255, 61, 135);
+}
+/*コメント用*/

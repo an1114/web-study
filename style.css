@@ -35,3 +35,22 @@ th {
     color:rgb(255, 61, 135);
 }
 /*コメント用*/
+
+.classes {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+.class {
+    flex: 0 0 200px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+} 
+.class img {
+    padding: 10px 30px;
+    width: 300px;
+}
+.class .text {
+    padding: 10px 10px;
+}

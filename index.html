@@ -6,36 +6,39 @@
     <title>HTML5サンプル</title>
   </header>
   <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol:wght@700&family=Stick&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   </link>
   <script src="script.js"></script>
   <script>
     window.onload = () => {
-        getNewtContent((data) => { 
-            const classList = document.getElementById("diablo-class");
-            for(let i=0;i<data.length;i++){
-                //class
-                const diabloClass = document.createElement("div");
-                diabloClass.className = "class";
-                classList.appendChild(diabloClass);
-                //class-name
-                const name = document.createElement("div");
-                name.innerText = data[i]["class-name"];
-                name.className = "text";
-                diabloClass.appendChild(name);
-                //class-image
-                const img = document.createElement("img");
-                img.src = data[i]["image"].src;
-                diabloClass.appendChild(img);
-                //feature
-                const feature = document.createElement("div");
-                feature.innerText = data[i]["feature"];
-                feature.className = "text";
-                diabloClass.appendChild(feature);
-            }
-        });
+      getNewtContent((data) => {
+        const classList = document.getElementById("diablo-class");
+        for (let i = 0; i < data.length; i++) {
+          //class
+          const diabloClass = document.createElement("div");
+          diabloClass.className = "class";
+          classList.appendChild(diabloClass);
+          //class-name
+          const name = document.createElement("div");
+          name.innerText = data[i]["class-name"];
+          name.className = "text";
+          diabloClass.appendChild(name);
+          //class-image
+          const img = document.createElement("img");
+          img.src = data[i]["image"].src;
+          diabloClass.appendChild(img);
+          //feature
+          const feature = document.createElement("div");
+          feature.innerText = data[i]["feature"];
+          feature.className = "text";
+          diabloClass.appendChild(feature);
+        }
+      });
     }
-</script>
+  </script>
 </head>
 
 <body>
